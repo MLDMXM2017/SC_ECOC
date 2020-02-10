@@ -1,19 +1,19 @@
 #SC-Code introduction
 
 ##The directory structure
-    /.
-        /Data # Data fold
-            detmatology.csv # Data example
-        /SC_Code # Source code
-            Classifier.py # Classifier definition
-            Criterion.py # Criterion definition
-            data_preprocess.py # Custom data preprocess
-            Distance_Toolkit.py # Distance definition
-            Feature_select.py # Feature selection method
-            Matrix_Toolkit.py # Auxiliary methods for matrix generation
-            SFFS.py # Forward floating search algorithm
-        /sc_ecoc_result # results of SC-ECOC algorithm
-        /main.py # Program entrance
+	/.
+		/Data # Data fold
+			detmatology.csv # Data example
+		/SC_Code # Source code
+			Classifier.py # Classifier definition
+			Criterion.py # Criterion definition
+			data_preprocess.py # Custom data preprocess
+			Distance_Toolkit.py # Distance definition
+			Feature_select.py # Feature selection method
+			Matrix_Toolkit.py # Auxiliary methods for matrix generation
+			SFFS.py # Forward floating search algorithm
+		/sc_ecoc_result # results of SC-ECOC algorithm
+		/main.py # Program entrance
 
 ##Details of main.py
 ###functions
@@ -41,6 +41,6 @@ This file mainly contain the source code of SC-ECOC algorithm. It has following 
 - Pandas
 
 ##The command to run demo
-    python3.6 main.py
+	python3.6 main.py
 it uses ./Data/dermatology.csv dataset as training dataset
 
