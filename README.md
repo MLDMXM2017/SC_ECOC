@@ -1,1 +1,1 @@
-#SC-Code introduction
+#SC Code
