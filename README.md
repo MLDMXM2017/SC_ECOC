@@ -16,6 +16,7 @@
 		/main.py # Program entrance
 
 ##Details of main.py
+
 ###functions
 1. euclidean_distance(x, y): calculate the euclidean distance between x and y.
 2. hamming_distance(x, y): calculate the hamming distance between x and y.
