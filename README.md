@@ -1,20 +1,20 @@
-#SC-Code introduction
+SC-Code introduction
 ===
 ##The directory structure
-===
+---
     /.<br>
-		  /Data # Data fold<br>
-			  detmatology.csv # Data example<br>
-		  /SC_Code # Source code<br>
-			  Classifier.py # Classifier definition<br>
-			  Criterion.py # Criterion definition<br>
-			  data_preprocess.py # Custom data preprocess<br>
-			  Distance_Toolkit.py # Distance definition<br>
-			  Feature_select.py # Feature selection method<br>
-			  Matrix_Toolkit.py # Auxiliary methods for matrix generation<br>
-			  SFFS.py # Forward floating search algorithm<br>
-		  /sc_ecoc_result # results of SC-ECOC algorithm<br>
-		  /main.py # Program entrance<br>
+	/Data # Data fold
+		detmatology.csv # Data example
+	/SC_Code # Source code
+		Classifier.py # Classifier definition
+		Criterion.py # Criterion definition
+		data_preprocess.py # Custom data preprocess
+		Distance_Toolkit.py # Distance definition
+		Feature_select.py # Feature selection method
+		Matrix_Toolkit.py # Auxiliary methods for matrix generation
+		SFFS.py # Forward floating search algorithm
+	/sc_ecoc_result # results of SC-ECOC algorithm
+	/main.py # Program entrance
 
 ##Details of main.py
 
