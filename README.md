@@ -45,6 +45,6 @@ Development environment
 
 The command to run demo
 ---
-python3.6 main.py
+	python3.6 main.py
 it uses ./Data/dermatology.csv dataset as training dataset
 
