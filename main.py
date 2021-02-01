@@ -365,6 +365,7 @@ if __name__ == '__main__':
                 label_temp = deepcopy(label)
                 train_data, test_data, train_label, test_label = train_test_split(data_temp, label_temp, test_size=0.2)
                 param = {}
+                # runner is startup class
                 pool.apply_async(runner, kwds={'classifier':classifier, 'classifier_name': classifiers_name[classifier_index],
                                          'train_data':train_data, 'train_label':train_label,
                                          'test_data':test_data, 'test_label':test_label,

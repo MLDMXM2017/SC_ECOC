@@ -5,16 +5,27 @@ import copy
 
 
 def sffs_divide(data, label, judge_score=Criterion.divide_score_coverage, **param):
+    '''
+    step1 in papers; it divides classes into two groups by the score of judge_score
+    :param data:
+    :param label:
+    :param judge_score: The E Function in papers.
+    :param param:
+    :return:
+    '''
     unique_label = np.unique(label)
     unique_label_i = []
     unique_label_j = unique_label[:]
     unique_label_i_res = []
     unique_label_j_res = []
+    # While the group no longer includes and no longer excludes the category, the loop stops
     while(list(unique_label_i) != list(unique_label_i_res)
           or list(unique_label_j) != list(unique_label_j_res)):
         unique_label_i_res = copy.deepcopy(unique_label_i)
         unique_label_j_res = copy.deepcopy(unique_label_j)
+        # step 1.1: include
         unique_label_i, unique_label_j = invovle_process(data, label, unique_label_i, unique_label_j, judge_score)
+        # step 1.2: exclude, it sames as include but the parameters are converse
         unique_label_i, unique_label_j = exclude_process(data, label, unique_label_i, unique_label_j, judge_score)
     return unique_label_i, unique_label_j
 
